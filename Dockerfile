@@ -9,4 +9,5 @@ ENV WEBHOOK_URL=https://project-0-lmem.onrender.com
 
 EXPOSE 5678
 
-CMD ["n8n"]
+CMD ["/bin/sh", "-c", "n8n"]
+
