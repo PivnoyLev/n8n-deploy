@@ -1,4 +1,4 @@
-FROM n8nio/n8n:1.99.1
+FROM n8nio/n8n
 
 ENV N8N_BASIC_AUTH_ACTIVE=true
 ENV N8N_BASIC_AUTH_USER=admin
@@ -9,5 +9,6 @@ ENV WEBHOOK_URL=https://project-0-lmem.onrender.com
 
 EXPOSE 5678
 
-CMD ["/bin/sh", "-c", "n8n"]
+CMD ["n8n"]
+
 
